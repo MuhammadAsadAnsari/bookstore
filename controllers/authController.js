@@ -19,18 +19,7 @@ const signup = (req, res) => {
     res.render('signup')
 }
 const signuppost = async (req, res) => {
-    console.log("in signup Post");
-    const { email, password } = req.body
-    try {
-        console.log("in try");
-        const user = await User.create({ email, password });
-        res.status(201).json(user)
-
-    } catch (error) {
-        const err = handleErrors(error)
-        res.status(400).json(err    );
-
-    }
+   
 }
 const loginpost = (req, res) => {
     console.log(req.body);
