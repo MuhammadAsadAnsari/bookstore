@@ -5,5 +5,5 @@ router.get('/signup',()=>signup)
 router.route('/signupPost').post(signuppost)
 
 router.get('/login',()=>login)
-router.route('/loginp').post(loginpost)
+router.route('/loginPost').post(loginpost)
 module.exports =router
